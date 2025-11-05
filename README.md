@@ -2,19 +2,6 @@
 
 A simple introductory project for GraphQL, demonstrating the basics of setting up a GraphQL server with Node.js.
 
-## Project Structure
-
-```
-graphql-introduction/
-│
-├── database.js          # Contains mock data or in-memory database logic
-├── index.js             # Main entry point for the GraphQL server
-├── schema.js            # Defines GraphQL types, queries, and mutations
-├── package.json         # Project dependencies and scripts
-├── .gitignore           # Ignored files and folders for git
-└── node_modules/        # Installed dependencies
-```
-
 ## Getting Started
 
 ### Prerequisites

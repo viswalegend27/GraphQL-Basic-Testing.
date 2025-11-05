@@ -6,6 +6,7 @@ import db from './database.js';
 
 // Here i can define how the queries are handled and what data is sent back
 const resolvers = {
+  // These are the entry points of the graphql queries
   Query: {
     Shirts: () => db.Shirts,
     Pants: () => db.Pants,
@@ -29,6 +30,7 @@ const resolvers = {
       return db.Reviews.filter((r) => String(r.shirtId ?? '') === parent.id);
     }
   },
+  // Creating an object and defining out resolver logic for that object
   Pant: {
     reviews(parent) {
       return db.Reviews.filter((r) => String(r.pantId ?? '') === parent.id);
